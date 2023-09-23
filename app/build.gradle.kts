@@ -37,23 +37,14 @@ android {
     viewBinding {
         enable = true
     }
-
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.fragment:fragment-testing:1.6.1")
     implementation("androidx.test.ext:junit-ktx:1.1.5")
-    implementation("androidx.navigation:navigation-testing:2.7.3")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation ("androidx.test:runner:1.4.0")
-    androidTestImplementation ("androidx.test:rules:1.4.0")
 
     //Navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.0")
@@ -64,18 +55,23 @@ dependencies {
 
     //lifecycle
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 
     //layout
     implementation ("com.google.android.material:material:1.9.0")
-    implementation ("androidx.core:core-splashscreen:1.0.1")
     implementation ("androidx.appcompat:appcompat:1.6.1")
-    implementation ("androidx.recyclerview:recyclerview:1.3.1")
 
+    //Tests
+    testImplementation("junit:junit:4.13.2")
     testImplementation ("org.mockito:mockito-core:2.24.5")
-    androidTestImplementation ("org.mockito:mockito-android:2.24.5")
-    androidTestImplementation ("androidx.navigation:navigation-testing:2.6.0")
     testImplementation ("junit:junit:4.13.2")
     testImplementation ("org.hamcrest:hamcrest-all:1.3")
+    implementation("androidx.navigation:navigation-testing:2.7.3")
+    debugImplementation("androidx.fragment:fragment-testing:1.6.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation ("androidx.test:rules:1.4.0")
+    androidTestImplementation ("androidx.test:runner:1.4.0")
+    androidTestImplementation ("androidx.navigation:navigation-testing:2.6.0")
+    androidTestImplementation ("org.mockito:mockito-android:2.24.5")
 
 }
